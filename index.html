@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HOTEL HIVE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "images/logo.png" type = "image/png">
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span>O SITE</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>HOTEL HIVE</h2>
+                <p>Localizado no bairro dos Jardins, um dos mais nobres da capital paulista, e a um quarteirão da Avenida Paulista, o Hive São Paulo Hotel é a escolha certa para vivenciar o melhor da cidade. </p>
+                <button type = "button" class = "head-btn">Seja Bem Vindo</button>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">serviços</a></li>
+                <li><a href = "#rooms">quartos</a></li>
+                <li><a href = "#customers">clientes</a></li>
+            </ul>
+            <button class = "btn sign-up">sign up</button>
+            <button class = "btn log-in">log in</button>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>serviços</h2>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Comidas</h2>
+                        <p>O restaurante caseiro é um ambiente bastante familiar, desde as pessoas que frequentam até a comida que é preparada.</p>
+                        <button type = "button" class = "btn">Saber Mais</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Bebidas</h2>
+                        <p>Com vista para a piscina mais cool da cidade, o Must Bar aposta em drinks artesanais e menus diferentes para o dia e a noite. O destaque também fica para as noites de jazz que acontecem durante a semana, sendo que aos domingos um Brunch é servido à beira da piscina, com música boa e deliciosos pratos.</p>
+                        <button type = "button" class = "btn">Saber Mais</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Serviços</h2>
+                        <p>Atendimento atencioso e serviços especiais e de qualidade. Apreciamos, em especial, o quarto com vista para o parque Trianon. Foi uma experiência especial.</p>
+                        <button type = "button" class = "btn">Saber Mais</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Segurança</h2>
+                        <p>A segurança consiste na responsabilidade de saber e agir da maneira correta.
+                        </p>
+                        <button type = "button" class = "btn">Saber Mais</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        <div class = "book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date"> Data de Check In: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date"> Data de Check Out: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adultos: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Crianças: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Quartos: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "Agende Agora">
+                </div>
+            </form>
+        </div>
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h2>Quartos</h2>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img1.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>QUARTO DE LUXO</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Ar Condicionado.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Cama com Massagem.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Banheiro com Sauna.
+                            </li>
+                        </ul>
+                        <p>Os quartos Deluxe, com 29m², incluem área de descanso e área de estar em comum. Mobiliados com cama Queen ou King Size, poltrona e uma mesa com máquina de café.</p>
+                        
+                        <p class = "rate">
+                            <span>$99.00 /</span> Per Noite
+                        </p>
+                        <button type = "button" class = "btn">Saber Mais</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img2.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>QUARTO DE LUXO</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Ar Condicionado.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Cama com Massagem.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Área Gourmet.
+                            </li>
+                        </ul>
+                        <p>O quarto Deluxe Plus, com 38 m², dispõe de cama King Size ou Twin e ainda uma confortável área de trabalho. A ampla sala de estar está mobiliada com poltrona, sofá e mesa de café. Os banheiros contam com box separado</p>
+                        <p class = "rate">
+                            <span>$99.00 /</span> Per Noite
+                        </p>
+                        <button type = "button" class = "btn">Saber Mais</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img3.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>QUARTO DE LUXO</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Ar Condicionado.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Banheira de Espuma.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Cama com Massagem.
+                            </li>
+                        </ul>
+                        <p>A Deluxe Family Room oferece o conforto e o espaço perfeito para toda a família. Além de uma cama Queen ou King Sinze e uma área de 29 m², a categoria tem como conectante uma Deluxe Plus Twin de 38 m² com duas confortáveis camas individuais e uma ampla sala de estar mobiliada com poltrona, sofá e mesa de café. Disponíveis do 5º ao 9º andar, oferecemos a estada ideal para sua viagem em família.</p>
+                        <p class = "rate">
+                            <span>$99.00 /</span> Per Noite
+                        </p>
+                        <button type = "button" class = "btn">Saber Mais</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>Clientes</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Nós Amamos</h3>
+                        <p>Nós amamos os quartos,são bem acochegantes.Tem uma piscina enorme com água quante ! Vamos voltar mais vezes</p>
+                        <img src = "images/cus1.jpg" alt = "customer image">
+                        <span>Cliente</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Muito Confortável</h3>
+                        <p>AMEI o local ,é bem confortavel com uma vista linda </p>
+                        <img src = "images/cus2.jpg" alt = "customer image">
+                        <span>Cliente</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Muito Legal</h3>
+                        <p>"Muito legal os quartos ,os parques a academia ! Voltarei mais vezes com a minha fámilia"</p>
+                        <img src = "images/cus3.jpg" alt = "customer image">
+                        <span>Cliente</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>Sobre Nós </h2>
+                    <p>O Hive São Paulo foi eleito como TOP 10 no prêmio “Top 20 Hotéis da América do Sul” do Condé Nast Traveler 2020 Readers’ Choice Awards, premiação da revista Condé Nast Traveler, que tem como base a avaliação dos leitores sobre hotéis do mundo inteiro. Além disso, é considerado o hotel brasileiro mais bem posicionado na lista.</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>links úteis</h2>
+                    <a href = "#">Blog</a>
+                    <a href = "#">Quartos</a>
+                    <a href = "#">Descrição</a>
+                    <a href = "#">Cartão Presente</a>
+                </div>
+
+                <div>
+                    <h2>Privacidade</h2>
+                    <a href = "#">Carreira</a>
+                    <a href = "#">Sobre Nós</a>
+                    <a href = "#">Entre em Contato</a>
+                    <a href = "#">Serviços</a>
+                </div>
+
+                <div>
+                    <h2>Tire Suas Dúvidas</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            Alameda Santos, 1437,Cerqueira César,CEP - 01419-001,São Paulo - Brasil
+
+
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +55 11 33250529
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            infohive@hotmail.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="script.js"></script>
+    </body>
+</html>
